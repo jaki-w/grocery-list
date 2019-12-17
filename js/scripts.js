@@ -7,7 +7,12 @@ $(document).ready(function() {
     var listItem3 = $(three).val();
     var listItems = [listItem1, listItem2, listItem3];
     listItems.sort();
-    alert(listItems);
+
+    var newList = listItems.map(function(listItems){
+      return listItems.toUpperCase();
+    });
+
+    alert(newList);
 
     $(".container").hide();
   });
