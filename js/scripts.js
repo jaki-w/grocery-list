@@ -15,6 +15,9 @@ $(document).ready(function() {
     alert(newList);
 
     $(".container").hide();
+
+    $("ul").text(newList);
+
     $("ul").show();
   });
 });
